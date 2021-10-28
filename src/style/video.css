@@ -1,0 +1,145 @@
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 3fr;
+      grid-template-columns: 5fr 3fr;
+  -ms-grid-rows: 300vh;
+      grid-template-rows: 300vh;
+      grid-template-areas: 'main-area video-list';
+}
+
+#sidebar {
+  display: none;
+}
+
+.el1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: main-area;
+  padding: 1rem 2.5rem 0;
+}
+
+.el1 .rectangle {
+  width: 100%;
+  height: 400px;
+  margin-top: 5rem;
+  background-color: #4c5155;
+}
+
+.el1 h2 {
+  margin: 1rem 0;
+}
+
+.el1 .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.el1 .info div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.el2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: video-list;
+  padding: 6rem 2rem 0 0;
+}
+
+.el2 .right-video {
+  height: 150px;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.el2 .right-video .thumbnail {
+  width: 60%;
+  height: 100%;
+  background-color: #4c5155;
+}
+
+.el2 .right-video .video-description {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.comments {
+  margin-top: 2rem;
+}
+
+.comments .comment {
+  margin-bottom: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100px;
+}
+
+.comments .comment .right-content h3, .comments .comment .right-content h5, .comments .comment .right-content p {
+  margin-bottom: .5rem;
+}
+
+.comments .creator-avatar-container {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+.comments .right-content {
+  padding: 0 1rem;
+}
+
+.comments .right-content div {
+  margin-bottom: .5rem;
+}
+
+.channel-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0;
+  border-top: solid 1px black;
+  padding: 1rem 0;
+  border-bottom: solid 1px black;
+}
+
+.channel-description h2 {
+  margin: 0;
+}
+
+.channel-description h2, .channel-description h3, .channel-description h4, .channel-description p {
+  margin-bottom: .5rem;
+}
+
+.add-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.add-comment .comment-form, .add-comment input {
+  width: 100%;
+}
+
+.add-comment .comment-form::after {
+  content: '';
+  border-bottom: solid 3px black;
+}
+/*# sourceMappingURL=video.css.map */
